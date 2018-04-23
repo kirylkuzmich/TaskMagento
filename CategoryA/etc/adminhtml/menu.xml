@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="Kuzmich_CategoryA::Test"
+                title="Test"
+                translate="title"
+                module="Kuzmich_CategoryA"
+                parent="Magento_Backend::system"
+                sortOrder="50"
+                dependsOnModule="Kuzmich_CategoryA"
+                resource="Kuzmich_CategoryA::Test"
+             />
+        <add
+                id="Kuzmich_CategoryA::TestA"
+                title="Test"
+                translate="title"
+                module="Kuzmich_CategoryA"
+                parent="Kuzmich_CategoryA::Test"
+                sortOrder="1"
+                dependsOnModule="Kuzmich_CategoryA"
+                action="categorya/index"
+                resource="Kuzmich_CategoryA::Test"
+            />
+    </menu>
+</config>

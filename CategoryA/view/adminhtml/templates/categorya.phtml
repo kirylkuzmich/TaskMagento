@@ -1,0 +1,9 @@
+<p>
+    <?php
+    $categories = $block->getCategoryCollection(true, true, "a");
+    foreach ($categories as $category) {
+        echo $category->getName() . '<br />';
+
+    }
+    ?>
+</p>
